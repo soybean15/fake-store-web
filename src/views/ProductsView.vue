@@ -5,11 +5,13 @@
   <div class="p-5 md-p-10" v-else>
     <div class="flex items-center">
       <span class="font-bold">Categories: </span>
-      <ul v-for="category in categories">
+      <div class="flex overflow-auto"> 
+      <ul  v-for="category in categories">
         <li>  
           <button @click="onClickCategory(category)" :class="{'text-primary':activeCategory===category}" class="btn btn-ghost" >{{category}}</button></li>
  
       </ul>
+      </div>
     </div>
     <div class="grid gap-4 grid-cols-1 md:grid-cols-3"> 
       <div v-for="product in products " :key="product.id">

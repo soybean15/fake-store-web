@@ -12,7 +12,7 @@
             bawal utang dahil mahirap maningil tulad ni kumareng susan na galit
             pag sinisingil.
           </p>
-          <button class="btn btn-primary">Shop with us</button>
+          <router-link to="/products"><button class="btn btn-primary">Shop with us</button> </router-link>
         </div>
       </div>
     </div>
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+
 export default {};
 </script>
 
