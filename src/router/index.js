@@ -51,6 +51,11 @@ const routes = [
         }
       },
       {
+        path:'product/:id',
+        name:'product',
+        component:()=> import('@/views/components/ProductView')
+      },
+      {
         path: '/about',
         name: 'about',
         // route level code-splitting

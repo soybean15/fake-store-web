@@ -15,7 +15,8 @@
     </div>
     <div class="grid gap-4 grid-cols-1 md:grid-cols-3"> 
       <div v-for="product in products " :key="product.id">
-        <product-card :product="product"/>
+
+       <router-link :to="{name:'product', params:{id:product.id}}"><product-card :product="product"/> </router-link> 
       </div>
 
     </div>

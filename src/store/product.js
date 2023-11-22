@@ -10,6 +10,7 @@ export const useProductStore = defineStore('product',()=>{
     const products = ref(null)
     const loading = ref(false)
     const categories = ref(null)
+    const product = ref(null)
 
 
 
@@ -39,11 +40,18 @@ export const useProductStore = defineStore('product',()=>{
         const response = await axios.get(`https://fakestoreapi.com/products/category/${category}`)
         products.value = response.data
     }
+    const getProduct= async(id)=>{
+        product.value = null
+        const response = await axios.get(`https://fakestoreapi.com/products/${id}`)
+        product.value = response.data
+    }
     return {
         products,
+        product,
         getProducts,
         loading,categories,
-        getProductsByCategory
+        getProductsByCategory,
+        getProduct
     }
 
 })
