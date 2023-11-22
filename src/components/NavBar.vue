@@ -1,7 +1,7 @@
 <template>
   <div class="navbar  ">
     <div class="flex-1 ">
-      <a class="btn btn-ghost text-xl ">daisyUI</a>
+     <router-link to="/">  <a class="btn btn-ghost text-sm ">Fake Store</a> </router-link>
     </div>
     <div class="flex-none">
 
