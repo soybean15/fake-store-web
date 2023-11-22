@@ -2,7 +2,7 @@
   <div class="column">
     <div class="hero min-h-screen">
       <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="@/assets/hero-image.png" class="max-w-lg rounded-lg" />
+        <img src="@/assets/hero-image.png" class="w-[300px] md:w-[500px] max-w-lg rounded-lg" />
         <div>
           <h1 class="text-5xl font-bold">Tindahan ni Aling Marites</h1>
           <p class="py-6">
