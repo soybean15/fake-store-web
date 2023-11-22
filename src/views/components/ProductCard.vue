@@ -1,8 +1,8 @@
 <template>
-  <div class="card bg-base-100 shadow-xl text-white cursor-pointer" v-if="product">
+  <div class="card shadow-xl text-white cursor-pointer  rounded-lg" v-if="product">
     <figure> 
-        <img class="h-[300px] md:h-[250px] w-full object-fill" :src="product.image" alt="Shoes" /></figure>
-    <div class="card-body ">
+        <img class="h-[300px] md:h-[250px] w-full object-fill " :src="product.image" alt="Shoes" /></figure>
+    <div class="card-body bg-gray-500  rounded-b-lg">
       <div class="card-title text-sm text-start">
         {{product.title}}
         <div class="badge  badge-secondary">P{{product.price}}</div>
