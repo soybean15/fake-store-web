@@ -8,6 +8,7 @@
         <router-link to='/home'> <div   :class="{'text-primary':active==='home'}" class="font-bold px-1 cursor-pointer">Home </div></router-link>
         <router-link   to='/products'> <div   :class="{'text-primary':active==='products'}" class="font-bold px-1 cursor-pointer">Products </div></router-link>
      
+        <router-link   to='/about'> <div   :class="{'text-primary':active==='about'}" class="font-bold px-1 cursor-pointer">About </div></router-link>
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <div class="indicator">
