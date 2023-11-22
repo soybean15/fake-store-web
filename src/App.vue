@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
+<div class="main ">
   <router-view/>
+</div>
+
 </template>
 
 <style>
@@ -26,5 +26,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.main{
+  background: rgb(237,235,237);
+background: radial-gradient(circle, rgba(237,235,237,1) 58%, rgba(246,187,228,1) 95%); 
 }
 </style>
