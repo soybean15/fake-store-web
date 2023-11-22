@@ -3,8 +3,10 @@
   <div class="h-screen ">
     <div class="h-[700px] flex justify-center items-center"> 
         <div class="flex flex-col items-center">
+            <img src="@/assets/loading.png"/>
+         
+            <span>Sandale </span>
             <span class="loading loading-ring loading-lg"></span>
-            <span>Loading </span>
          </div>
       
         
