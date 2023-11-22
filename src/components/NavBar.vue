@@ -4,6 +4,10 @@
       <a class="btn btn-ghost text-xl ">daisyUI</a>
     </div>
     <div class="flex-none">
+
+        <router-link to='/home'> <div   :class="{'text-primary':active==='home'}" class="font-bold px-1 cursor-pointer">Home </div></router-link>
+        <router-link   to='/products'> <div   :class="{'text-primary':active==='products'}" class="font-bold px-1 cursor-pointer">Products </div></router-link>
+        <div   :class="{'text-primary':active==='category'}" class="font-bold px-1 cursor-pointer">Category </div>
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <div class="indicator">
@@ -37,35 +41,37 @@
           </div>
         </div>
       </div>
-      <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
-            />
-          </div>
-        </label>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-        >
-          <li>
-            <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
-          <li><a>Settings</a></li>
-          <li><a>Logout</a></li>
-        </ul>
-      </div>
+      
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import {useNavStore} from '@/store/nav'
+import { storeToRefs } from 'pinia';
+import { onMounted } from 'vue';
+
+
+export default {
+    setup(){
+        const navStore = useNavStore()
+
+        const {active}= storeToRefs(navStore)
+
+        
+        onMounted(()=>{
+          
+        })
+  
+        return {
+            navStore,
+          
+            active
+        }
+
+       
+    }
+};
 </script>
 
 <style>
